@@ -1,0 +1,234 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .7px;
+}
+p{
+    font-size: 15px;
+}
+img, a{
+    cursor: pointer;
+}
+.video-container{
+    min-height: 640px;
+    max-height: 720px;
+    height: 540px;
+    position: relative;
+    overflow: hidden;
+    inset: 0px;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    inset: 0px;
+}
+.section-container{
+    display: flex;
+    margin: 48px 0;
+    padding:  12px;
+}
+.bedow-text-container,
+.studio-text-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    padding: 0 12px;
+    width: 25%;
+}
+.text{
+    font-size: 16px;
+    padding: 0 12px;
+    color: black;
+}
+.bedow-description-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.description{
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    width: 80%;
+    padding: 0 12px;
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+}
+.right-container{
+    width: 73.48%;
+    display: flex;
+    flex-direction: column;
+}
+.image-container,
+.year-container,
+.description-container,
+.link-container{
+    padding: 0 12px;
+}
+.year-container{
+    width: 25%;
+}
+.description-container,
+.image-left,
+.image-right{
+    width: 100%;
+}
+.caption-container{
+    display: flex;
+    align-items: top;
+}
+.studio-image{
+    width: 83%;
+    padding: 0 12px;
+    margin-bottom: 40px;
+}
+.studio-text-container{
+    justify-content: space-between;
+}
+.link{
+    text-decoration: underline;
+    color:black;
+}
+.long-description-container{
+    margin: 16px 100px 16px 0;
+    padding: 0 12px;
+}
+.imgs-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.caption-container-column{
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+}
+.top-section-container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: right;
+}
+.top-section-divider{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.bottom-section-container{
+    display: flex;
+}
+.top-right{
+    flex: 1;
+}
+.bottom-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.blank-div{
+    height: 40px;
+}
+.footer{
+    background-color: rgb(116, 125, 121);
+    display: flex;
+    padding: 144px 12px;
+    font-size: 15px;
+}
+.footer-left{
+    display: flex;
+    flex: 1;
+}
+.footer-left-links{
+    width: 35%;
+    margin-left: 18%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+}
+.footer-contact-info{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0 12px;
+}
+.footer-right{
+    display: flex;
+    flex: 1;
+    justify-content: end;
+}
+.footer-right-links{
+    width: 30%;
+    padding: 0 12px;
+}
+.footer-sign-up{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    overflow:hidden;
+    padding: 0 12px;
+}
+.sign-up-container{
+    width: 100%;
+}
+.sign-up{
+    background: transparent;   
+    border: 1px solid rgb(0, 0, 0);
+    height: 36px;
+    width: 97%;
+}
+.footer-signup-section{
+    margin-right: 12%;
+}
+.privacy-policy-container{
+    padding-top: 8px;
+    display: flex;
+    width: 100%;
+}
+.subscribe-button-container{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.subscribe-button{
+    padding: 16px 8px;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+[type="checkbox"]{
+    width: 20px;
+    opacity: 0;
+    z-index: 99;
+    cursor: pointer;
+    position: relative;
+    left: -3px;
+}
+[type="checkbox"] + p{
+    position: relative;
+    display: inline-block;
+    line-height: 20px;
+}
+[type="checkbox"] + p::before{
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    outline: 1px solid black;
+    background: transparent;
+}
+[type="checkbox"]:checked + p::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -26px;
+    width: 20px;
+    height: 20px;
+    outline: 1px solid black;
+    background-color: black;
+}
