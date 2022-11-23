@@ -10,10 +10,6 @@ p{
 img, a{
     cursor: pointer;
 }
-.hand-container{
-    position: fixed;
-    z-index: 1;
-}
 .video-container{
     min-height: 640px;
     max-height: 720px;
