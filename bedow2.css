@@ -75,8 +75,11 @@ body{
     overflow-x: hidden;
 }
 p{
-    font-size: 20px;
+    font-size: 16px;
     padding: 0 12px;
+}
+div{
+    font-size: 20px
 }
 img, a{
     cursor: pointer;
